@@ -1,0 +1,39 @@
+# A1, Azfer Azeem, Code
+
+# Define the path to your file
+
+file_path = './product_data.txt'
+
+#def insert_row(matrix):
+#    new_row = list(map(int, input("Enter the row elements separated by spaces: ").split()))
+#    index = int(input("Enter the index to insert the row: "))
+#    matrix.insert(index, new_row)
+#    return matrix
+#
+#0, 1 , 2
+#[a, b, c]   len = 3
+#len - 1 => 2
+#len
+#
+
+
+# create list 
+# ask user for input
+# append the new list to the data/2d array
+
+
+
+data = []
+with open(file_path, 'r') as f:
+    for line in f.readlines():
+        inner_data=[]
+        for element in line.split(","):
+            inner_data.append(element.strip())
+        data.append(inner_data)
+#print(data[1][1])
+#print(data[0][0])
+print(data)
+
+
+
+exit()
